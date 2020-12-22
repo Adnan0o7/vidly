@@ -1,0 +1,2 @@
+# vidly
+ Django leaning project
