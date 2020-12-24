@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 {% block  content %}
-  <dl>
-    <dt>Title</dt>
-    <dd>{{ movie.title }}</dd>
-    <dt>Genre</dt>
-    <dd>{{ movie.genre }}</dd>
-    <dt>Stock</dt>
-    <dd>{{ movie.number_in_stock }}</dd>
+  <dl class="row" >
+    <dt class="col-sm-1">Title</dt>
+    <dd class="col-sm-11">{{ movie.title }}</dd>
+    <dt class="col-sm-1">Genre</dt>
+    <dd class="col-sm-11">{{ movie.genre }}</dd>
+    <dt class="col-sm-1">Stock</dt>
+    <dd class="col-sm-11">{{ movie.number_in_stock }}</dd>
   </dl>
 {% endblock  %}
