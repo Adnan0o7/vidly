@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'vidlyprod.herokuapp.com',
-    'powerful-tor-21988.herokuapp.com',
+    'vidly-qa.herokuapp.com',
     '127.0.0.1'
 ]
 
