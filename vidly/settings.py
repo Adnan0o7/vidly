@@ -27,6 +27,7 @@ SECRET_KEY = '5@=sp)w+kyv&v!5w+-5!@z2lb293j^vfb8df-_%0$bvtlk9tuk'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'vidlyprod.herokuapp.com',
     'powerful-tor-21988.herokuapp.com',
     '127.0.0.1'
 ]
