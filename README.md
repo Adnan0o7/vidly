@@ -1,4 +1,4 @@
 # vidly
- Django leaning project
+ Django learning project
  
  Hosted on Heroku cloud >> https://vidlyprod.herokuapp.com/
