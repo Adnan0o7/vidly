@@ -12,7 +12,7 @@
     
     <!-- Heap -->
 
-    <script-src https://cdn.heapanalytics.com https://heapanalytics.com 'unsafe-inline' 'unsafe-eval'; img-src https://heapanalytics.com; style-src https://heapanalytics.com; connect-src https://heapanalytics.com; font-src https://heapanalytics.com;></script>
+    {% comment %} <script-src https://cdn.heapanalytics.com https://heapanalytics.com 'unsafe-inline' 'unsafe-eval'; img-src https://heapanalytics.com; style-src https://heapanalytics.com; connect-src https://heapanalytics.com; font-src https://heapanalytics.com;></script> {% endcomment %}
 
     <script type="text/javascript">
     window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
@@ -21,10 +21,23 @@
 
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Vidly</a>
-      </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'movies:index'%}">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Recommended (Coming soon)</a>
+            </li>
+          </ul>
+        </div>
+      </div> 
     </nav>       
 
     <main class="container">
