@@ -10,9 +10,13 @@ django-tastypie = "*"
 gunicorn = "*"
 whitenoise = "*"
 flake8 = "*"
+pep8 = "*"
+install = "*"
+autopep8 = "*"
 
 [dev-packages]
 pylint = "*"
+autopep8 = "*"
 
 [requires]
 python_version = "3.8"
